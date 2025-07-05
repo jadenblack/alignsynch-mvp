@@ -1,8 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "ignoreCommand": "node scripts/skip-ci.js",
-  "installCommand": "npm install -g pnpm@latest && cd ../.. && pnpm install --frozen-lockfile",
+  "installCommand": "corepack enable && corepack prepare pnpm@latest --activate && cd ../.. && pnpm install --frozen-lockfile",
   "buildCommand": "cd ../.. && pnpm build --filter=app",
   "framework": "nextjs",
-  "outputDirectory": ".next"
+  "functions": {
+    "app/api/**/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  }
 }
