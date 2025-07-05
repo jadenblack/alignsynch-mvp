@@ -1,7 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "ignoreCommand": "node scripts/skip-ci.js",
-  "installCommand": "corepack enable && corepack prepare pnpm@latest --activate && cd ../.. && pnpm install --frozen-lockfile",
+  "installCommand": "npm install -g pnpm@latest && cd ../.. && pnpm install --frozen-lockfile",
   "buildCommand": "cd ../.. && pnpm build --filter=app",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "outputDirectory": ".next"
 }
