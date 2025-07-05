@@ -1,0 +1,14 @@
+{
+  "title": "User Guide",
+  "root": true,
+  "pages": [
+    "index",
+    "authentication",
+    "dashboard",
+    "data-management",
+    "collaboration",
+    "payments",
+    "api",
+    "faq"
+  ]
+}

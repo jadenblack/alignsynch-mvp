@@ -1,0 +1,242 @@
+---
+title: Authentication Guide
+description: Complete guide to user authentication, registration, and account management
+---
+
+# Authentication Guide
+
+This guide covers everything you need to know about user authentication, account creation, and user management in your next-forge application.
+
+## Getting Started
+
+### Creating an Account
+
+1. **Visit the Sign-Up Page**
+   - Navigate to the application URL
+   - Click "Sign Up" or "Create Account"
+   - You'll be redirected to the registration form
+
+2. **Fill in Your Details**
+   - **Email Address**: Enter a valid email address (this will be your username)
+   - **Password**: Create a strong password
+   - **Confirm Password**: Re-enter your password for verification
+
+3. **Verify Your Email**
+   - Check your email inbox for a verification message
+   - Click the verification link to activate your account
+   - You'll be redirected back to the application
+
+4. **Complete Your Profile**
+   - Add your name and profile information
+   - Upload a profile picture (optional)
+   - Set your preferences
+
+### Signing In
+
+1. **Access the Login Page**
+   - Go to the application URL
+   - Click "Sign In" or "Login"
+
+2. **Enter Your Credentials**
+   - **Email**: Your registered email address
+   - **Password**: Your account password
+
+3. **Two-Factor Authentication** (if enabled)
+   - Enter the verification code from your authenticator app
+   - Or use backup codes if available
+
+4. **Stay Signed In**
+   - Check "Remember me" to stay logged in on trusted devices
+   - Your session will remain active for security-approved duration
+
+## Account Management
+
+### Profile Settings
+
+Access your profile settings by clicking your avatar in the sidebar:
+
+- **Personal Information**
+  - Update your name and contact details
+  - Change your profile picture
+  - Set your timezone and language preferences
+
+- **Security Settings**
+  - Change your password
+  - Enable two-factor authentication
+  - Review active sessions
+  - Download account data
+
+- **Notification Preferences**
+  - Email notification settings
+  - In-app notification preferences
+  - Marketing communication options
+
+### Password Management
+
+#### Changing Your Password
+
+1. Go to **Settings** → **Security**
+2. Click "Change Password"
+3. Enter your current password
+4. Enter your new password twice
+5. Click "Update Password"
+
+#### Forgot Password
+
+1. On the login page, click "Forgot Password"
+2. Enter your email address
+3. Check your email for reset instructions
+4. Click the reset link in the email
+5. Enter your new password
+6. Confirm the password change
+
+### Two-Factor Authentication (2FA)
+
+#### Enabling 2FA
+
+1. Go to **Settings** → **Security**
+2. Click "Enable Two-Factor Authentication"
+3. Scan the QR code with your authenticator app
+4. Enter the verification code from your app
+5. Save your backup codes in a secure location
+
+#### Using 2FA
+
+- After entering your email and password, you'll be prompted for a 2FA code
+- Open your authenticator app and enter the 6-digit code
+- If you don't have access to your app, use one of your backup codes
+
+## Organization Management
+
+### Creating an Organization
+
+1. After signing up, you'll be prompted to create an organization
+2. Enter your organization name
+3. Add a description (optional)
+4. Upload an organization logo (optional)
+5. Click "Create Organization"
+
+### Managing Team Members
+
+#### Inviting Users
+
+1. Go to **Settings** → **Team**
+2. Click "Invite Member"
+3. Enter the email address of the person you want to invite
+4. Select their role (Admin, Member, Viewer)
+5. Add a personal message (optional)
+6. Click "Send Invitation"
+
+#### Managing Roles
+
+**Admin**
+- Full access to all features
+- Can manage billing and subscriptions
+- Can invite and remove team members
+- Can change organization settings
+
+**Member**
+- Access to core features
+- Can create and edit content
+- Can collaborate with team members
+- Cannot manage billing or team settings
+
+**Viewer**
+- Read-only access
+- Can view content and data
+- Can participate in collaboration features
+- Cannot create or edit content
+
+#### Removing Team Members
+
+1. Go to **Settings** → **Team**
+2. Find the member you want to remove
+3. Click the "..." menu next to their name
+4. Select "Remove from Organization"
+5. Confirm the action
+
+### Organization Settings
+
+- **General Information**: Update name, description, and logo
+- **Billing**: Manage subscription and payment methods
+- **Security**: Set organization-wide security policies
+- **Integrations**: Connect third-party services
+
+## Session Management
+
+### Active Sessions
+
+View and manage your active sessions:
+
+1. Go to **Settings** → **Security** → **Sessions**
+2. See all devices where you're currently logged in
+3. Review session details (device, location, last activity)
+4. Revoke access from specific devices if needed
+
+### Automatic Logout
+
+- Sessions automatically expire after a period of inactivity
+- You'll be prompted to extend your session before it expires
+- Sensitive actions may require re-authentication
+
+## Security Best Practices
+
+### Password Security
+
+- Use a unique, strong password
+- Include uppercase, lowercase, numbers, and special characters
+- Avoid using personal information
+- Consider using a password manager
+
+### Account Security
+
+- Enable two-factor authentication
+- Regularly review your active sessions
+- Keep your email account secure
+- Report suspicious activity immediately
+
+### Organization Security
+
+- Regularly review team member access
+- Remove access for former team members
+- Use role-based permissions appropriately
+- Monitor organization activity logs
+
+## Troubleshooting
+
+### Common Issues
+
+**Can't Sign In**
+- Verify your email and password are correct
+- Check if your account is locked
+- Try resetting your password
+- Contact support if issues persist
+
+**Email Verification Issues**
+- Check your spam/junk folder
+- Ensure the email address is correct
+- Request a new verification email
+- Contact support if not received
+
+**2FA Problems**
+- Ensure your device's time is synchronized
+- Try using a backup code
+- Contact support to disable 2FA if needed
+
+### Getting Help
+
+- Use the in-app help center
+- Contact support through the application
+- Check the FAQ section for common questions
+- Email support directly for urgent issues
+
+## API Authentication
+
+For developers integrating with the API:
+
+- Use API keys for server-to-server authentication
+- Include the API key in the Authorization header
+- Rotate API keys regularly for security
+- Monitor API usage and rate limits
+
+See the [API Documentation](/user-guide/api) for detailed integration instructions.
