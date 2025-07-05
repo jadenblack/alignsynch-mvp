@@ -1,4 +1,4 @@
-import { keys as analytics } from '@repo/analytics/keys';
+// import { keys as analytics } from '@repo/analytics/keys';
 import { keys as auth } from '@repo/auth/keys';
 import { keys as collaboration } from '@repo/collaboration/keys';
 import { keys as database } from '@repo/database/keys';
@@ -14,7 +14,7 @@ import { createEnv } from '@t3-oss/env-nextjs';
 export const env = createEnv({
   extends: [
     auth(),
-    analytics(),
+    // analytics(),
     collaboration(),
     core(),
     database(),

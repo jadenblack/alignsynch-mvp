@@ -5,7 +5,7 @@ import { showBetaFeature } from '@repo/feature-flags';
 import { NotificationsProvider } from '@repo/notifications/components/provider';
 import { secure } from '@repo/security';
 import type { ReactNode } from 'react';
-import { PostHogIdentifier } from './components/posthog-identifier';
+// import { PostHogIdentifier } from './components/posthog-identifier';
 import { GlobalSidebar } from './components/sidebar';
 
 type AppLayoutProperties = {
@@ -36,7 +36,7 @@ const AppLayout = async ({ children }: AppLayoutProperties) => {
           )}
           {children}
         </GlobalSidebar>
-        <PostHogIdentifier />
+        {/* <PostHogIdentifier /> */}
       </SidebarProvider>
     </NotificationsProvider>
   );
