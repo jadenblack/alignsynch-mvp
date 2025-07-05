@@ -56,16 +56,6 @@ jobs:
           echo "✅ Deployment successful!"
           echo "🚀 Your app should be live at your Vercel URL"
 
-      - name: Notify Teams on Failure
-        if: failure()
-        uses: skitionek/notify-microsoft-teams@master
-        with:
-          webhook_url: ${{ secrets.TEAMS_WEBHOOK_URL }}
-          needs: ${{ toJson(needs) }}
-          job: ${{ toJson(job) }}
-          steps: ${{ toJson(steps) }}
-          dry_run: false
-
       - name: Fallback Notification on Failure
         if: failure()
         run: |
